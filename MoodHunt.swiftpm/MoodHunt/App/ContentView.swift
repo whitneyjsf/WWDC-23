@@ -3,16 +3,26 @@ import SwiftUI
 struct ContentView: View {
     
     var body: some View {
-        GeometryReader { geo in
-            ZStack {
-                Image("Background-1")
-                    .resizable()
-                    .scaledToFill()
-                    .edgesIgnoringSafeArea(.all)
+        ZStack {
+            Image("Background-1")
+                .resizable()
+                .scaledToFill()
+                .edgesIgnoringSafeArea(.all)
+            VStack(alignment: .center, spacing: 10){
+                Text("MoodHunt")
+                VStack {
+                    Text("Let's track your mood today! 😊")
+                }
+                .padding()
+                .font(Font.system(size:30, design: .serif))
+                VStack {
+                    
+                }
             }
+            .font(Font.system(size:110, design: .serif))
+            
         }
     }
-
 }
 
 struct ContentView_Previews: PreviewProvider {
