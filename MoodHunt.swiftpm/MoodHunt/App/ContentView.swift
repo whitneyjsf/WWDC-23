@@ -20,8 +20,6 @@ struct ContentView: View {
                         NavigationLink(destination: InputTrackerView()){
                             Image(systemName:"play.circle.fill")
                         }
-                        .foregroundColor()
-                        
                     }
                 }
                 .font(Font.system(size:110, design: .serif))
