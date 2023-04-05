@@ -20,11 +20,7 @@ struct TypeWriterView: View {
                 typeWriter()
             }
             .foregroundColor(.brown)
-            VStack {
-                
-            }
         }
-        
     }
     
     

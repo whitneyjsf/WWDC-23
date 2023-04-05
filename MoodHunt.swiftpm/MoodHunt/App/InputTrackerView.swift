@@ -9,9 +9,27 @@ import SwiftUI
 
 struct InputTrackerView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationView {
+            ZStack {
+                Image("Background-2")
+                    .resizable()
+                    .scaledToFill()
+                    .edgesIgnoringSafeArea(.all)
+                VStack {
+                    Text("What have you been up to?")
+                }
+                .font(Font.system(size:35, design: .serif))
+                .multilineTextAlignment(.center)
+                VStack {
+                    HStack {
+                        //button (happy, sad, angry, stress, etc.)
+                    }
+                }
+            }
+        }
+        .navigationViewStyle(StackNavigationViewStyle())
     }
-        
+    
 }
 
 struct InputTrackerView_Previews: PreviewProvider {
