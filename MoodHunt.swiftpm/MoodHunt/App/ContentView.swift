@@ -3,25 +3,34 @@ import SwiftUI
 struct ContentView: View {
     
     var body: some View {
-        ZStack {
-            Image("Background-1")
-                .resizable()
-                .scaledToFill()
-                .edgesIgnoringSafeArea(.all)
-            VStack(alignment: .center, spacing: 10){
-                Text("MoodHunt")
-                VStack {
-                    Text("Let's track your mood today! 😊")
+        NavigationView {
+            ZStack {
+                Image("Background-1")
+                    .resizable()
+                    .scaledToFill()
+                    .edgesIgnoringSafeArea(.all)
+                VStack(alignment: .center, spacing: 10){
+                    Text("MoodHunt")
+                    VStack {
+                        Text("Let's track your mood today! 😊")
+                    }
+                    .padding()
+                    .font(Font.system(size:30, design: .serif))
+                    VStack {
+                        NavigationLink(destination: InputTrackerView()){
+                            Image(systemName:"play.circle.fill")
+                        }
+                        .foregroundColor()
+                        
+                    }
                 }
-                .padding()
-                .font(Font.system(size:30, design: .serif))
-                VStack {
-                    
-                }
+                .font(Font.system(size:110, design: .serif))
+                
             }
-            .font(Font.system(size:110, design: .serif))
-            
         }
+        .navigationViewStyle(StackNavigationViewStyle())
+        
+        
     }
 }
 
