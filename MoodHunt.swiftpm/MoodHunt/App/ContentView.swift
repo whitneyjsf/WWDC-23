@@ -17,18 +17,16 @@ struct ContentView: View {
                     .padding()
                     .font(Font.system(size:30, design: .serif))
                     VStack {
-                        NavigationLink(destination: InputTrackerView()){
-                            Image(systemName:"play.circle.fill")
+                        NavigationLink(destination: IntroductionView()){
+                            Image(systemName:"play.circle")
                         }
+                        .foregroundColor(.brown)
                     }
                 }
                 .font(Font.system(size:110, design: .serif))
-                
             }
         }
         .navigationViewStyle(StackNavigationViewStyle())
-        
-        
     }
 }
 
