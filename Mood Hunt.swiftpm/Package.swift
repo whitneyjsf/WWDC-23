@@ -8,20 +8,20 @@ import PackageDescription
 import AppleProductTypes
 
 let package = Package(
-    name: "MoodHunt",
+    name: "Mood Hunt",
     platforms: [
         .iOS("15.2")
     ],
     products: [
         .iOSApplication(
-            name: "MoodHunt",
+            name: "Mood Hunt",
             targets: ["AppModule"],
-            bundleIdentifier: "com.whitneyjsf.MoodHunt",
+            bundleIdentifier: "com.whitneyjsf.Mood-Hunt",
             teamIdentifier: "8MSBZR3SX7",
             displayVersion: "1.0",
             bundleVersion: "1",
-            appIcon: .placeholder(icon: .butterfly),
-            accentColor: .presetColor(.purple),
+            appIcon: .placeholder(icon: .running),
+            accentColor: .presetColor(.red),
             supportedDeviceFamilies: [
                 .pad,
                 .phone

@@ -1,6 +1,6 @@
 //
 //  InputTrackerView.swift
-//  MoodHunt
+//  Mood Hunt
 //
 //  Created by Whitney Prajna Pundarika on 06/04/23.
 //
@@ -15,16 +15,19 @@ struct InputTrackerView: View {
                     .resizable()
                     .scaledToFill()
                     .edgesIgnoringSafeArea(.all)
-                VStack {
-                    Text("What have you been up to?")
-                }
-                .font(Font.system(size:35, design: .serif))
-                .multilineTextAlignment(.center)
-                VStack {
-                    HStack {
-                        //button (happy, sad, angry, stress, etc.)
-                    }
-                }
+                
+//                VStack {
+//                    Text("Question 1")
+//                    .padding()
+//                    Text("What have you been up to?")
+//                    .font(Font.system(size:34, design: .serif))
+//                    Spacer()
+//                }
+//                .padding(.top, 300)
+//                .font(Font.system(size:60, design: .serif))
+//                VStack {
+//
+//                }
             }
         }
         .navigationViewStyle(StackNavigationViewStyle())

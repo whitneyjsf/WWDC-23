@@ -1,11 +1,9 @@
 //
 //  IntroductionView.swift
-//  MoodHunt
+//  Mood Hunt
 //
 //  Created by Whitney Prajna Pundarika on 06/04/23.
 //
-
-import SwiftUI
 
 import SwiftUI
 
@@ -18,7 +16,7 @@ struct IntroductionView: View {
                     .scaledToFill()
                     .edgesIgnoringSafeArea(.all)
                 VStack(alignment: .center, spacing: 10){
-                    Text("Introducing MoodHunter!\n")
+                    Text("How's your day?\n")
                         .font(Font.system(size:60, design: .serif))
                         .multilineTextAlignment(.center)
                     VStack {
@@ -29,18 +27,20 @@ struct IntroductionView: View {
                             Image("Cartoon-4")
                         }
                     }
-                    .padding()
                     VStack (alignment: .center) {
-                        Text("\nIn today's fast-paced world, it's easy to get caught up in the hustle and bustle of daily life. With so many responsibilities to juggle, it's no surprise that our moods can fluctuate throughout the day. But how can we keep track of these changes and understand the patterns in our emotional state?")
+                        Text("\nIn today's fast-paced world, it's easy to get caught up in the hustle and bustle of daily life. Our moods can fluctuate throughout the day.")
+                        Text("\nBut how can we keep track of these changes and understand the patterns in our emotional state?")
                         TypeWriterView()
                     }
-                    .font(Font.system(size:35, design: .serif))
+                    .padding(.horizontal ,90)
+                    .font(Font.system(size:25, design: .serif))
                     .multilineTextAlignment(.center)
                     .lineLimit(9)
                     VStack {
                         NavigationLink(destination: InputTrackerView()){
                             Image(systemName:"play.circle")
                         }
+                        
                         .foregroundColor(.brown)
                     }
                 }

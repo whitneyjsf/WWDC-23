@@ -1,8 +1,8 @@
 //
 //  TypeWriterView.swift
-//  MoodHunt
+//  Mood Hunt
 //
-//  Created by Whitney Prajna Pundarika on 05/04/23.
+//  Created by Whitney Prajna Pundarika on 06/04/23.
 //
 
 import SwiftUI
@@ -10,7 +10,7 @@ import SwiftUI
 struct TypeWriterView: View {
     
     @State var text: String = ""
-    let finalText: String = "\nThat's why the MoodHunt comes in to track on you! 😀"
+    let finalText: String = "\nLet's begin!"
     
     var body: some View {
         
