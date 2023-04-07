@@ -6,8 +6,13 @@
 //
 
 import SwiftUI
+import AVFoundation
 
 struct IntroductionView: View {
+    
+    @StateObject var viewModel = ButtonSoundViewModel()
+    @State var showSecondView = false
+    
     var body: some View {
         NavigationView {
             ZStack {
@@ -31,21 +36,42 @@ struct IntroductionView: View {
                         Text("\nIn today's fast-paced world, it's easy to get caught up in the hustle and bustle of daily life. Our moods can fluctuate throughout the day.")
                         Text("\nBut how can we keep track of these changes and understand the patterns in our emotional state?")
                         TypeWriterView()
+                            .padding()
                     }
                     .padding(.horizontal ,90)
                     .font(Font.system(size:25, design: .serif))
                     .multilineTextAlignment(.center)
                     .lineLimit(9)
                     VStack {
-                        NavigationLink(destination: InputTrackerView()){
-                            Image(systemName:"play.circle")
+                        NavigationLink(destination: InputTrackerView()) {
+                            Text("Track Your Mood Today")
+                                .font(Font.system(size:30, design: .serif))
+                                .foregroundColor(.white)
+                                .frame(width:500, height: 60)
+                                .background(Color.brown)
+                                .cornerRadius(8)
+                                .padding(.bottom,5)
+                        }
+                        .onTapGesture {
+                            viewModel.playButtonSound()
                         }
                         
-                        .foregroundColor(.brown)
+                        NavigationLink(destination: HistoryView()) {
+                            Text("Check Your Mood Tracker")
+                                .font(Font.system(size:30, design: .serif))
+                                .foregroundColor(.white)
+                                .frame(width:500, height: 60)
+                                .background(Color.brown)
+                                .cornerRadius(8)
+                                .padding(.bottom,5)
+                        }
+                        .onTapGesture {
+                            viewModel.playButtonSound()
+                        }
                     }
+                    .padding()
+                    .font(Font.system(size:80, design: .serif))
                 }
-                .padding()
-                .font(Font.system(size:80, design: .serif))
             }
         }
         .navigationViewStyle(StackNavigationViewStyle())

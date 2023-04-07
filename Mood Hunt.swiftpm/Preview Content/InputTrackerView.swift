@@ -16,18 +16,6 @@ struct InputTrackerView: View {
                     .scaledToFill()
                     .edgesIgnoringSafeArea(.all)
                 
-//                VStack {
-//                    Text("Question 1")
-//                    .padding()
-//                    Text("What have you been up to?")
-//                    .font(Font.system(size:34, design: .serif))
-//                    Spacer()
-//                }
-//                .padding(.top, 300)
-//                .font(Font.system(size:60, design: .serif))
-//                VStack {
-//
-//                }
             }
         }
         .navigationViewStyle(StackNavigationViewStyle())
