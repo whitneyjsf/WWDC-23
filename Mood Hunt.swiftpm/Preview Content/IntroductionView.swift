@@ -6,12 +6,8 @@
 //
 
 import SwiftUI
-import AVFoundation
 
 struct IntroductionView: View {
-    
-    @StateObject var viewModel = ButtonSoundViewModel()
-    @State var showSecondView = false
     
     var body: some View {
         NavigationView {
@@ -21,7 +17,7 @@ struct IntroductionView: View {
                     .scaledToFill()
                     .edgesIgnoringSafeArea(.all)
                 VStack(alignment: .center, spacing: 10){
-                    Text("How's your day?\n")
+                    Text("What have you been up to?\n")
                         .font(Font.system(size:60, design: .serif))
                         .multilineTextAlignment(.center)
                     VStack {
@@ -42,8 +38,11 @@ struct IntroductionView: View {
                     .font(Font.system(size:25, design: .serif))
                     .multilineTextAlignment(.center)
                     .lineLimit(9)
+                    
                     VStack {
-                        NavigationLink(destination: InputTrackerView()) {
+                        NavigationLink(destination: InputTrackerView().onAppear(perform: {
+                            SoundManager.instance.playSound()
+                        })) {
                             Text("Track Your Mood Today")
                                 .font(Font.system(size:30, design: .serif))
                                 .foregroundColor(.white)
@@ -52,21 +51,17 @@ struct IntroductionView: View {
                                 .cornerRadius(8)
                                 .padding(.bottom,5)
                         }
-                        .onTapGesture {
-                            viewModel.playButtonSound()
-                        }
                         
-                        NavigationLink(destination: HistoryView()) {
-                            Text("Check Your Mood Tracker")
+                        NavigationLink(destination: HistoryView().onAppear(perform: {
+                            SoundManager.instance.playSound()
+                        })) {
+                            Text("Check Your Mood History")
                                 .font(Font.system(size:30, design: .serif))
                                 .foregroundColor(.white)
                                 .frame(width:500, height: 60)
                                 .background(Color.brown)
                                 .cornerRadius(8)
                                 .padding(.bottom,5)
-                        }
-                        .onTapGesture {
-                            viewModel.playButtonSound()
                         }
                     }
                     .padding()

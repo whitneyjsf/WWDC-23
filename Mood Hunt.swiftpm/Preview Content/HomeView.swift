@@ -20,7 +20,9 @@ struct HomeView: View {
             .padding()
             .font(Font.system(size:30, design: .serif))
             VStack {
-                NavigationLink(destination: IntroductionView().navigationBarHidden(true)){
+                NavigationLink(destination: IntroductionView().navigationBarHidden(true).onAppear(perform: {
+                    SoundManager.instance.playSound()
+                })){
                     Image(systemName:"play.circle")
                 }
                 .foregroundColor(.brown)
