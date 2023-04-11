@@ -7,6 +7,7 @@ MoodHunt is an app created to help people track their moods and improve their em
 
 
 Resources:
+
 Button click sounds at HomeView, IntroductionView, and InputTrackerView -> Free license from: https://www.zapsplat.com/sound-effect-category/button-clicks/
 Assets Cartoon-1, Cartoon-2, Cartoon-3, Cartoon-4, and HomeCartoon at HomeView, and IntroductionView -> Free license from:
 https://www.freepik.com/free-vector/people-showing-emotions_4186806.htm#query=cartoon%20assets%20peoplemood&position=6&from_view=search&track=ais
