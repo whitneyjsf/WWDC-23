@@ -3,7 +3,9 @@ Whitney Prajna Pundarika - WWDC '23 - Student Challenge - Cohort 6
 
 Hello 🙋‍♀️, I'm Whitney Prajna Pundarika. An undergraduate student from Bina Nusantara University, currently in my 6th semester majoring in Information Systems, focusing on the Business Intelligence stream. I’m highly interested in anything about UI/UX design, iOS Developer, and Data Analyst.
 
-MoodHunt is an app created to help people track their moods and improve their emotional well-being. This idea came from its creator, Whitney itself who had struggled with mood swings and temperament since her childhood. It is designed to be user-friendly and easy to navigate and improve their mood and find happiness within themselves.
+MoodHunt is an app created to help people track their moods and improve their emotional well-being. This idea came from its creator, Whitney itself who had struggled with mood swings and temperament since her childhood. 
+
+It is designed to be user-friendly and easy to navigate for them to record their mood in a few minutes.
 
 
 Resources:
