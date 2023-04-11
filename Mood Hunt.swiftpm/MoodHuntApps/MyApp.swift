@@ -4,7 +4,8 @@ import SwiftUI
 struct MyApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView().previewDevice(PreviewDevice(rawValue: "iPad Pro")).previewInterfaceOrientation(.portrait)
+            ContentView().previewDevice(PreviewDevice(rawValue: "iPad Pro (12.9-inch) (6th generation)")).previewInterfaceOrientation(.portrait)
+
         }
     }
 }

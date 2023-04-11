@@ -9,6 +9,8 @@ import SwiftUI
 
 struct InputTrackerView: View {
     
+    @StateObject var viewModel = InputTrackViewModel()
+    
     var body: some View {
         NavigationView {
             ZStack {
@@ -20,12 +22,27 @@ struct InputTrackerView: View {
                     Text("How are you today?")
                         .font(Font.system(size:60, design: .serif))
                         .multilineTextAlignment(.center)
-                }
-                VStack {
+                        .padding(.bottom, 35)
+                    VStack(alignment: .center, spacing: 10){
+                        ForEach(viewModel.moods, id: \.self) { mood in
+                            Button(action: {
+                                SoundManager.instance.playSound()
+                                viewModel.selectMood(mood: mood)
+                            }) {
+                                Text(mood)
+                                    .font(Font.system(size:30, design: .serif))
+                                    .foregroundColor(.white)
+                                    .frame(width:350, height: 60)
+                                    .background(Color.brown)
+                                    .cornerRadius(8)
+                                    .padding(.bottom,24)
+                            }
+                        }
+                    }
+                    .padding(.horizontal ,150)
                     
                 }
             }
-            Spacer()
         }
         .navigationViewStyle(StackNavigationViewStyle())
     }
@@ -33,6 +50,6 @@ struct InputTrackerView: View {
 
 struct InputTrackerView_Previews: PreviewProvider {
     static var previews: some View {
-        InputTrackerView()
+        InputTrackerView().previewDevice(PreviewDevice(rawValue: "iPad Pro (12.9-inch) (6th generation)")).previewInterfaceOrientation(.portrait)
     }
 }

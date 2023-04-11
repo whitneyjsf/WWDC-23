@@ -9,6 +9,8 @@ import SwiftUI
 
 struct IntroductionView: View {
     
+    @State private var isInputTrackerViewAdded = false
+    
     var body: some View {
         NavigationView {
             ZStack {
@@ -75,6 +77,6 @@ struct IntroductionView: View {
 
 struct IntroductionView_Previews: PreviewProvider {
     static var previews: some View {
-        IntroductionView()
+        IntroductionView().previewDevice(PreviewDevice(rawValue: "iPad Pro (12.9-inch) (6th generation)")).previewInterfaceOrientation(.portrait)
     }
 }
