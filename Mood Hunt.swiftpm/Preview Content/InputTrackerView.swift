@@ -38,6 +38,7 @@ struct InputTrackerView: View {
                                     .padding(.bottom,24)
                             }
                         }
+
                     }
                     .padding(.horizontal ,150)
                     

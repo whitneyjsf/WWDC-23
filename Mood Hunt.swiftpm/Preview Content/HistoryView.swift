@@ -29,10 +29,6 @@ struct HistoryView: View {
                             HStack {
                                 Text(mood)
                                 Spacer()
-                                HStack {
-                                    Text("\(Date().formatted(date: .abbreviated, time: .shortened))")
-                                        .foregroundColor(.gray)
-                                }
                             }
                         }
                         .onAppear {

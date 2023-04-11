@@ -18,7 +18,7 @@ class InputTrackViewModel: ObservableObject {
     
     func selectMood(mood: String) {
         var moodHistory = UserDefaults.standard.array(forKey: "moodHistory") as? [String] ?? []
-        moodHistory.append(mood)
+        moodHistory.append("\(mood) - \(Date().formatted(date: .abbreviated, time: .shortened))")
         UserDefaults.standard.set(moodHistory, forKey: "moodHistory")
     }
     
