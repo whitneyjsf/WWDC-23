@@ -10,7 +10,7 @@ import SwiftUI
 struct HistoryView: View {
     
     @StateObject var viewModel = HistoryViewModel()
-
+    
     var body: some View {
         NavigationView {
             ZStack {
@@ -25,21 +25,44 @@ struct HistoryView: View {
                         .multilineTextAlignment(.center)
                         .padding()
                     VStack {
-                        List(viewModel.moodHistory, id: \.self) { mood in
+                        List(viewModel.moodHistory, id: \.id) { mood in
                             HStack {
-                                Text(mood)
+                                Text(mood.result)
                                 Spacer()
+                                Text(
+                                    mood.date.formatted()
+                                )
                             }
-                        }
-                        .onAppear {
+                        }.onAppear {
                             viewModel.loadHistory()
                         }
+//                        for i in 0..<viewModel.moodHistory.count {
+//                            HStack {
+//                                Text(viewModel.moodHistory[i])
+//                                Spacer()
+//                                Text(
+//                                    viewModel.dateHistory[i]
+//                                )
+//                            }
+//                        }
+                        //                        List(viewModel.moodHistory.indexed(), id: \.1.self) { idx, mood in
+                        //                            HStack {
+                        //                                Text(mood)
+                        //                                Spacer()
+                        //                                Text(
+                        //                                    viewModel.dateHistory[idx]
+                        //                                )
+                        //                            }
+                        //                        }
+                        //                        .onAppear {
+                        //                            viewModel.loadHistory()
+                        //                        }
                     }
                 }
                 .padding(.leading, 50)
                 .padding(.trailing, 50)
                 .padding(.top, 50)
-                .padding(.bottom, 50)
+                .padding(.bottom, 90)
             }
         }
         .navigationViewStyle(StackNavigationViewStyle())

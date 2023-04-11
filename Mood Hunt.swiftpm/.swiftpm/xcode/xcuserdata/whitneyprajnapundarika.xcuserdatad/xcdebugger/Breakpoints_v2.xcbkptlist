@@ -36,5 +36,165 @@
             landmarkType = "24">
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "9C53E72B-5368-4A80-B08E-AE3C9028F76D"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Preview Content/HistoryViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "16"
+            endingLineNumber = "16"
+            landmarkName = "loadHistory()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "9C53E72B-5368-4A80-B08E-AE3C9028F76D - 4e835269adb2f4ac"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Mood_Hunt.HistoryViewModel.loadHistory() -&gt; ()"
+                  moduleName = "Mood Hunt"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/whitneyprajnapundarika/Downloads/WWDC%20&apos;23/MoodHunt/Mood%20Hunt.swiftpm/Preview%20Content/HistoryViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "76">
+               </Location>
+               <Location
+                  uuid = "9C53E72B-5368-4A80-B08E-AE3C9028F76D - 4e835269adb2f4ac"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Mood_Hunt.HistoryViewModel.loadHistory() -&gt; ()"
+                  moduleName = "Mood Hunt"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/whitneyprajnapundarika/Downloads/WWDC%20&apos;23/MoodHunt/Mood%20Hunt.swiftpm/Preview%20Content/HistoryViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "244">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "19AC3C19-BECC-4D34-9EAB-44B3A60406C3"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Preview Content/HistoryViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "21"
+            endingLineNumber = "21"
+            landmarkName = "loadHistory()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "2B1EC1D4-ED88-44B4-8D98-25650E4EF88E"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Preview Content/InputTrackViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "20"
+            endingLineNumber = "20"
+            landmarkName = "selectMood(mood:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "2B1EC1D4-ED88-44B4-8D98-25650E4EF88E - 9568993bd94dacf8"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Mood_Hunt.InputTrackViewModel.selectMood(mood: Swift.String) -&gt; ()"
+                  moduleName = "Mood Hunt"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/whitneyprajnapundarika/Downloads/WWDC%20&apos;23/MoodHunt/Mood%20Hunt.swiftpm/Preview%20Content/InputTrackViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "328">
+               </Location>
+               <Location
+                  uuid = "2B1EC1D4-ED88-44B4-8D98-25650E4EF88E - 9568993bd94dacf8"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Mood_Hunt.InputTrackViewModel.selectMood(mood: Swift.String) -&gt; ()"
+                  moduleName = "Mood Hunt"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/whitneyprajnapundarika/Downloads/WWDC%20&apos;23/MoodHunt/Mood%20Hunt.swiftpm/Preview%20Content/InputTrackViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "508">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "1CCFF7BD-4CD1-4B9A-AF17-0C0FA281161D"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Preview Content/InputTrackViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "29"
+            endingLineNumber = "29"
+            landmarkName = "selectMood(mood:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "2153FC23-CB9D-47C9-BAF2-0B09082E01A5"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Preview Content/InputTrackViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "36"
+            endingLineNumber = "36"
+            landmarkName = "selectMood(mood:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "949EB68C-F5D4-4B22-A018-939094C9E746"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Preview Content/HistoryViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "15"
+            endingLineNumber = "15"
+            landmarkName = "loadHistory()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>

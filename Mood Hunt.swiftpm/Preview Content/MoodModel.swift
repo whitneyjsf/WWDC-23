@@ -8,9 +8,9 @@
 import SwiftUI
 import Foundation
 
-struct MoodModel: Identifiable {
-    let id = UUID()
-    let date: Date
-    let result: Double
+struct MoodModel: Identifiable, Encodable, Decodable {
+    var id = UUID()
+    var date: Date = Date()
+    var result: String
 }
 
