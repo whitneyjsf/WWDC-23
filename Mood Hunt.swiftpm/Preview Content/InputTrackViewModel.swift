@@ -42,16 +42,6 @@ class InputTrackViewModel: ObservableObject {
                 UserDefaults.standard.set(encoded, forKey: "moodModels")
             }
         }
-//        var moodHistory = UserDefaults.standard.array(forKey: "moodHistory") as? [String] ?? []
-//        var dateHistory = UserDefaults.standard.array(forKey: "dateHistory") as? [String] ?? []
-//
-//        let moods = try JSONDecoder().decode(MoodModel.self, from: moodHistory)
-//
-//        moodHistory.append(MoodModel(result: mood))
-//        dateHistory.append(Date().formatted(date: .abbreviated, time: .shortened))
-//
-//        UserDefaults.standard.set(moodHistory, forKey: "moodHistory")
-//        UserDefaults.standard.set(dateHistory, forKey: "dateHistory")
     }
     
     func reset() {
