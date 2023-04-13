@@ -24,7 +24,7 @@ struct InputTrackerView: View {
                         .multilineTextAlignment(.center)
                         .padding(.bottom, 35)
                     VStack(alignment: .center, spacing: 10){
-                        // FOr loop paralel mood nambah history nambah
+                        // For loop paralel mood nambah history nambah
                         //
                         ForEach(viewModel.moods, id: \.self) { mood in
                             Button(action: {
@@ -38,11 +38,9 @@ struct InputTrackerView: View {
                                     .background(Color.brown)
                                     .cornerRadius(8)
                                     .padding(.bottom,24)
-//                                Spacer()
-//                                Text(date)
                             }
                         }
-
+                        
                     }
                     .padding(.horizontal ,150)
                     

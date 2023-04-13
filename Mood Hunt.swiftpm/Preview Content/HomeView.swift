@@ -12,15 +12,19 @@ struct HomeView: View {
         VStack(alignment: .center, spacing: 10){
             Text("\nMoodHunt")
             VStack {
-                Image("HomeCartoon")
+                Image("Whitney-1")
+                    .resizable()
+                        .scaledToFit()
+                        .frame(width: 250, height: 250)
             }
+            .padding()
             VStack {
                 Text("Let's track your mood today!")
             }
             .padding()
             .font(Font.system(size:30, design: .serif))
             VStack {
-                NavigationLink(destination: IntroductionView().navigationBarHidden(true).onAppear(perform: {
+                NavigationLink(destination: PageOneView().navigationBarHidden(true).onAppear(perform: {
                     SoundManager.instance.playSound()
                 })){
                     Image(systemName:"play.circle")

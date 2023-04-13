@@ -10,7 +10,6 @@ import Combine
 
 class HistoryViewModel: ObservableObject {
     @Published var moodHistory = [MoodModel]()
-    // @Published var dateHistory = UserDefaults.standard.array(forKey: "dateHistory") as? [String] ?? []
     
     func loadHistory() {
         if let data = UserDefaults.standard.data(forKey: "moodModels") {
@@ -24,10 +23,5 @@ class HistoryViewModel: ObservableObject {
             
             print(data)
         }
-//        moodHistory = UserDefaults.standard.array(forKey: "moodHistory") as? [String] ?? []
     }
-    
-//    func dateHistory(mood: String) {
-//        moodHistory.append("\(mood) - \(Date().formatted(date: .abbreviated, time: .shortened))")
-//    }
 }

@@ -19,28 +19,38 @@ struct IntroductionView: View {
                     .scaledToFill()
                     .edgesIgnoringSafeArea(.all)
                 VStack(alignment: .center, spacing: 10){
-                    Text("What have you been up to?\n")
+                    Text("What have you been up to?")
                         .font(Font.system(size:60, design: .serif))
                         .multilineTextAlignment(.center)
                     VStack {
                         HStack {
                             Image("Cartoon-1")
+                                .resizable()
+                                    .scaledToFit()
+                                    .frame(width: 230, height: 230)
                             Image("Cartoon-2")
+                                .resizable()
+                                    .scaledToFit()
+                                    .frame(width: 230, height: 230)
                             Image("Cartoon-3")
+                                .resizable()
+                                    .scaledToFit()
+                                    .frame(width: 230, height: 230)
                             Image("Cartoon-4")
+                                .resizable()
+                                    .scaledToFit()
+                                    .frame(width: 230, height: 230)
                         }
                     }
                     VStack (alignment: .center) {
                         Text("\nIn today's fast-paced world, it's easy to get caught up in the hustle and bustle of daily life. Our moods can fluctuate throughout the day.")
                         Text("\nBut how can we keep track of these changes and understand the patterns in our emotional state?")
-                        TypeWriterView()
-                            .padding()
                     }
                     .padding(.horizontal ,90)
                     .font(Font.system(size:25, design: .serif))
                     .multilineTextAlignment(.center)
                     .lineLimit(9)
-                    
+                    .padding()
                     VStack {
                         NavigationLink(destination: InputTrackerView().onAppear(perform: {
                             SoundManager.instance.playSound()
@@ -65,6 +75,12 @@ struct IntroductionView: View {
                                 .cornerRadius(8)
                                 .padding(.bottom,5)
                         }
+                        TypeWriterView()
+                            .padding(.horizontal ,90)
+                            .font(Font.system(size:25, design: .serif))
+                            .multilineTextAlignment(.center)
+                            .lineLimit(9)
+                            .padding()
                     }
                     .padding()
                     .font(Font.system(size:80, design: .serif))

@@ -36,27 +36,6 @@ struct HistoryView: View {
                         }.onAppear {
                             viewModel.loadHistory()
                         }
-//                        for i in 0..<viewModel.moodHistory.count {
-//                            HStack {
-//                                Text(viewModel.moodHistory[i])
-//                                Spacer()
-//                                Text(
-//                                    viewModel.dateHistory[i]
-//                                )
-//                            }
-//                        }
-                        //                        List(viewModel.moodHistory.indexed(), id: \.1.self) { idx, mood in
-                        //                            HStack {
-                        //                                Text(mood)
-                        //                                Spacer()
-                        //                                Text(
-                        //                                    viewModel.dateHistory[idx]
-                        //                                )
-                        //                            }
-                        //                        }
-                        //                        .onAppear {
-                        //                            viewModel.loadHistory()
-                        //                        }
                     }
                 }
                 .padding(.leading, 50)

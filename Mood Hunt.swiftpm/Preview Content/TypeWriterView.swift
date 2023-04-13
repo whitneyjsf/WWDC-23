@@ -10,7 +10,7 @@ import SwiftUI
 struct TypeWriterView: View {
     
     @State var text: String = ""
-    let finalText: String = "\nLet's begin!"
+    let finalText: String = "\nHave a nice day! 🫶"
     
     var body: some View {
         

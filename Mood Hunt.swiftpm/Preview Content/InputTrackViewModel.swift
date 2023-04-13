@@ -25,12 +25,9 @@ class InputTrackViewModel: ObservableObject {
                 // Use the decoded array of MoodModel objects
                 decoded.append(MoodModel(result: mood))
                 let encoder = JSONEncoder()
-                do {
-                    let encoded = try? encoder.encode(decoded)
-                    UserDefaults.standard.set(encoded, forKey: "moodModels")
-                } catch {
-                    print(error.localizedDescription)
-                }
+                let encoded = try? encoder.encode(decoded)
+                UserDefaults.standard.set(encoded, forKey: "moodModels")
+            
             }
         } else {
             let moods = [MoodModel(result: mood)]
@@ -42,6 +39,7 @@ class InputTrackViewModel: ObservableObject {
                 UserDefaults.standard.set(encoded, forKey: "moodModels")
             }
         }
+
     }
     
     func reset() {

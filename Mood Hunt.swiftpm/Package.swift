@@ -20,7 +20,7 @@ let package = Package(
             teamIdentifier: "8MSBZR3SX7",
             displayVersion: "1.0",
             bundleVersion: "1",
-            appIcon: .placeholder(icon: .running),
+            appIcon: .asset("AppIcon"),
             accentColor: .presetColor(.red),
             supportedDeviceFamilies: [
                 .pad,
@@ -31,7 +31,8 @@ let package = Package(
                 .landscapeRight,
                 .landscapeLeft,
                 .portraitUpsideDown(.when(deviceFamilies: [.pad]))
-            ]
+            ],
+            appCategory: .productivity
         )
     ],
     targets: [

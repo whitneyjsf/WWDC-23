@@ -12,7 +12,12 @@ Resources:
 
 - Button click sounds at HomeView, IntroductionView, and InputTrackerView -> Free license from: https://www.zapsplat.com/sound-effect-category/button-clicks/
 
-- Assets Cartoon-1, Cartoon-2, Cartoon-3, Cartoon-4, and HomeCartoon at HomeView, and IntroductionView -> Free license from:
-https://www.freepik.com/free-vector/people-showing-emotions_4186806.htm#query=cartoon%20assets%20peoplemood&position=6&from_view=search&track=ais
-
+- Assets for background -> 
+    Editorial Sketch Stressed Woman by sparklestroke -> Free license from: https://www.canva.com/icons/MAE48wuOt6o/
+    Happy hand drawing face -> Free license from: https://www.canva.com/icons/MAE5eA2B2Xs/
+    Sad hand drawing face -> Free license from: https://www.canva.com/icons/MAE5eNWUmMU/
+    Aesthetic blob -> Free license from: https://www.canva.com/icons/MAFHxC8qDss/
+    Blob shape element -> Free license from: https://www.canva.com/icons/MAE_EVWlW_8/
+    Blob border -> Free license from: https://www.canva.com/icons/MAEtt9znnME/
+    
 
