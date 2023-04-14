@@ -28,13 +28,6 @@ struct PageOneView: View {
                 .font(Font.system(size:30, design: .serif))
                 VStack {
                     HStack {
-//                        NavigationLink(destination: ContentView().navigationBarHidden(true).onAppear(perform: {
-//                            SoundManager.instance.playSound()
-//                        })){
-//                            Image(systemName:"chevron.backward.square")
-//                        }
-//                        .foregroundColor(.brown)
-//                        .padding()
                         NavigationLink(destination: PageTwoView().navigationBarHidden(true).onAppear(perform: {
                             SoundManager.instance.playSound()
                         })){
@@ -53,6 +46,6 @@ struct PageOneView: View {
 
 struct PageOneView_Previews: PreviewProvider {
     static var previews: some View {
-        PageOneView()
+        PageOneView().previewDevice(PreviewDevice(rawValue: "iPad Pro (12.9-inch) (6th generation)")).previewInterfaceOrientation(.portrait)
     }
 }

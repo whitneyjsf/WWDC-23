@@ -58,6 +58,6 @@ struct PageTwoView: View {
 
 struct PageTwoView_Previews: PreviewProvider {
     static var previews: some View {
-        PageTwoView()
+        PageTwoView().previewDevice(PreviewDevice(rawValue: "iPad Pro (12.9-inch) (6th generation)")).previewInterfaceOrientation(.portrait)
     }
 }

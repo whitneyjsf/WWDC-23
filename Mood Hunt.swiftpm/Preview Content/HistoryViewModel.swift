@@ -16,7 +16,7 @@ class HistoryViewModel: ObservableObject {
             // Decode the Data object back to an array of MoodModel objects using JSONDecoder
             let decoder = JSONDecoder()
             if let decoded = try? decoder.decode([MoodModel].self, from: data) {
-                // Use the decoded array of MoodModel objects
+                // Using the decoded array of MoodModel objects
                 moodHistory = decoded
                 print(moodHistory)
             }

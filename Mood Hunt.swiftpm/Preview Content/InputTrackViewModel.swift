@@ -27,7 +27,7 @@ class InputTrackViewModel: ObservableObject {
                 let encoder = JSONEncoder()
                 let encoded = try? encoder.encode(decoded)
                 UserDefaults.standard.set(encoded, forKey: "moodModels")
-            
+                
             }
         } else {
             let moods = [MoodModel(result: mood)]
@@ -39,12 +39,10 @@ class InputTrackViewModel: ObservableObject {
                 UserDefaults.standard.set(encoded, forKey: "moodModels")
             }
         }
-
     }
     
     func reset() {
         selectedMood = nil
         isInputDisabled = false
     }
-    
 }

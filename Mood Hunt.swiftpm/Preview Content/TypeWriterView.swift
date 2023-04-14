@@ -37,7 +37,6 @@ struct TypeWriterView: View {
     }
 }
 
-
 struct TypeWriterView_Previews: PreviewProvider {
     static var previews: some View {
         TypeWriterView().previewDevice(PreviewDevice(rawValue: "iPad Pro (12.9-inch) (6th generation)")).previewInterfaceOrientation(.portrait)

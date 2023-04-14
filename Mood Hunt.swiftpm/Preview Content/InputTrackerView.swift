@@ -24,8 +24,6 @@ struct InputTrackerView: View {
                         .multilineTextAlignment(.center)
                         .padding(.bottom, 35)
                     VStack(alignment: .center, spacing: 10){
-                        // For loop paralel mood nambah history nambah
-                        //
                         ForEach(viewModel.moods, id: \.self) { mood in
                             Button(action: {
                                 SoundManager.instance.playSound()
