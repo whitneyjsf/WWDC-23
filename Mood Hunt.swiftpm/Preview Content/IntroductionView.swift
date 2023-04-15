@@ -19,7 +19,7 @@ struct IntroductionView: View {
                     .scaledToFill()
                     .edgesIgnoringSafeArea(.all)
                 VStack(alignment: .center, spacing: 10){
-                    Text("What have you been up to?")
+                    Text("\n\nWhat have you been up to?")
                         .font(Font.system(size:60, design: .serif))
                         .multilineTextAlignment(.center)
                     VStack {
@@ -27,27 +27,28 @@ struct IntroductionView: View {
                             Image("Cartoon-1")
                                 .resizable()
                                     .scaledToFit()
-                                    .frame(width: 230, height: 230)
+                                    .frame(width: 210, height: 210)
                             Image("Cartoon-2")
                                 .resizable()
                                     .scaledToFit()
-                                    .frame(width: 230, height: 230)
+                                    .frame(width: 210, height: 210)
                             Image("Cartoon-3")
                                 .resizable()
                                     .scaledToFit()
-                                    .frame(width: 230, height: 230)
+                                    .frame(width: 210, height: 210)
                             Image("Cartoon-4")
                                 .resizable()
                                     .scaledToFit()
-                                    .frame(width: 230, height: 230)
+                                    .frame(width: 210, height: 210)
                         }
                     }
+                    .padding()
                     VStack (alignment: .center) {
-                        Text("\nIn today's fast-paced world, it's easy to get caught up in the hustle and bustle of daily life. Our moods can fluctuate throughout the day.")
+                        Text("In today's fast-paced world, it's easy to get caught up in the hustle and bustle of daily life. Our moods can fluctuate throughout the day.")
                         Text("\nBut how can we keep track of these changes and understand the patterns in our emotional state?")
                     }
                     .padding(.horizontal ,90)
-                    .font(Font.system(size:25, design: .serif))
+                    .font(Font.system(size:34, design: .serif))
                     .multilineTextAlignment(.center)
                     .lineLimit(9)
                     .padding()
@@ -63,7 +64,6 @@ struct IntroductionView: View {
                                 .cornerRadius(8)
                                 .padding(.bottom,5)
                         }
-                        
                         NavigationLink(destination: HistoryView().onAppear(perform: {
                             SoundManager.instance.playSound()
                         })) {
@@ -96,3 +96,4 @@ struct IntroductionView_Previews: PreviewProvider {
         IntroductionView().previewDevice(PreviewDevice(rawValue: "iPad Pro (12.9-inch) (6th generation)")).previewInterfaceOrientation(.portrait)
     }
 }
+
