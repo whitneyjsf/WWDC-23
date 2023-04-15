@@ -15,7 +15,7 @@ struct PageTwoView: View {
             .edgesIgnoringSafeArea(.all)
         VStack(alignment: .center, spacing: 10){
             VStack {
-                Text("\nAre you ready to track your mood?")
+                Text("\nAre you ready to track your mood? 👀")
                     .padding(.horizontal, 20)
                     .font(Font.system(size:55, design: .serif))
             }
@@ -26,9 +26,9 @@ struct PageTwoView: View {
                     .frame(width: 350, height: 350)
             }
             VStack {
-                Text("\nBy monitoring your emotions everyday, you can gain valuable insights into your mental health and well-being, and make positive changes to live your berst life.\n\nBy using the Mood Hunt, you'll gain a better understanding of your mood and be able to make positive changes to improve your overall well-being.\n")
+                Text("\nBy monitoring your emotions everyday, you can gain valuable insights into your mental health and well-being, and make positive changes to live your berst life.\n\nMood Hunt will help you to gain a better understanding of your mood and be able to make positive changes to improve your overall well-being.\n")
             }
-            .padding(.horizontal, 150)
+            .padding(.horizontal, 80)
             .multilineTextAlignment(.center)
             .font(Font.system(size:30, design: .serif))
             VStack {
@@ -61,3 +61,4 @@ struct PageTwoView_Previews: PreviewProvider {
         PageTwoView().previewDevice(PreviewDevice(rawValue: "iPad Pro (12.9-inch) (6th generation)")).previewInterfaceOrientation(.portrait)
     }
 }
+
