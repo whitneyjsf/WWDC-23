@@ -16,7 +16,7 @@ struct PageOneView: View {
                 .edgesIgnoringSafeArea(.all)
             VStack(alignment: .center, spacing: 10){
                 VStack {
-                    Text("\nWhy do you need to track your mood?")
+                    Text("\nIntroducing the Developer 👋")
                         .padding(.horizontal, 55)
                 }
                 Image("Whitney")
@@ -49,3 +49,4 @@ struct PageOneView_Previews: PreviewProvider {
         PageOneView().previewDevice(PreviewDevice(rawValue: "iPad Pro (12.9-inch) (6th generation)")).previewInterfaceOrientation(.portrait)
     }
 }
+
